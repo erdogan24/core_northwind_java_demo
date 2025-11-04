@@ -11,7 +11,7 @@ import lombok.Data;
 @Entity
 @Table(name="products")
 public class Product {
-	
+	 
 	@Id
 	@GeneratedValue
 	@Column(name="product_id")
