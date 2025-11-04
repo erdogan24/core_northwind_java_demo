@@ -25,7 +25,7 @@ public class Product {
 	
 	@Column(name="unit_price")
 	private double unitPrice;
-	
+	 
 	@Column(name="units_in_stock")
 	private short unitsInStock;
 	
