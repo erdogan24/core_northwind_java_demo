@@ -4,11 +4,14 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import codeDemo.core_northwind_java.business.abstracts.ProductService;
 import codeDemo.core_northwind_java.core.utilities.results.DataResult;
+import codeDemo.core_northwind_java.core.utilities.results.Result;
 import codeDemo.core_northwind_java.entities.concretes.Product;
 
 @RestController
@@ -27,6 +30,12 @@ public class ProductsController {
 	@GetMapping("/getall")
 	public DataResult<List<Product>> getAll(){
 		return this.productService.getAll();		
+		
+	}
+	
+	@PostMapping("/add")
+	public Result add(@RequestBody Product product) {
+		return this.productService.add(product);
 		
 	}
 
