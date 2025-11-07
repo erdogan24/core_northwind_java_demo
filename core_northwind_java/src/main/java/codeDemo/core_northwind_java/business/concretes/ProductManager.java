@@ -36,13 +36,11 @@ public class ProductManager implements ProductService{
 				
 	}
 
-
 	@Override
 	public Result add(Product product) {
 		this.productDao.save(product);
 		return new SuccessResult("Product has been added");
 	}
-
 
 	@Override
 	public DataResult<Product> getByProductName(String productName) {
@@ -50,29 +48,25 @@ public class ProductManager implements ProductService{
 		(this.productDao.getByProductName(productName),"Data has been listed");
 	}
 
-
 	@Override
 	public DataResult<Product> getByProductNameAndCategoryId(String productName, int categoryId) {
 		// business codes 
 		
 		return new SuccessDataResult<Product>
-		(this.productDao.getByProductNameAndCategoryId(productName, categoryId),"Data has been listed");
+		(this.productDao.getByProductNameAndCategory_CategoryId(productName, categoryId),"Data has been listed");
 	}
-
 
 	@Override
 	public DataResult<List<Product>> getByProductNameOrCategoryId(String productName, int categoryId) {
 		return new SuccessDataResult<List<Product>>
-		(this.productDao.getByProductNameOrCategoryId(productName, categoryId),"Data has been listed");
+		(this.productDao.getByProductNameOrCategory_CategoryId(productName, categoryId),"Data has been listed");
 	}
-
 
 	@Override
 	public DataResult<List<Product>> getByCategoryIdIn(List<Integer> categories) {
 		return new SuccessDataResult<List<Product>>
-		(this.productDao.getByCategoryIdIn(categories),"Data has been listed");
+		(this.productDao.getByCategory_CategoryIdIn(categories),"Data has been listed");
 	}
-
 
 	@Override
 	public DataResult<List<Product>> getByProductNameContains(String ProductName) {
@@ -80,13 +74,11 @@ public class ProductManager implements ProductService{
 		(this.productDao.getByProductNameContains(ProductName),"Data has been listed");
 	}
 
-
 	@Override
 	public DataResult<List<Product>> getByProductNameStartsWith(String ProductName) {
 		return new SuccessDataResult<List<Product>>
 		(this.productDao.getByProductNameStartsWith(ProductName),"Data has been listed");
 	}
-
 
 	@Override
 	public DataResult<List<Product>> getByNameAndCategory(String productName, int categoryId) {

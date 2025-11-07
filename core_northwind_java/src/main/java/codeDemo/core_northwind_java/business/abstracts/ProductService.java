@@ -2,8 +2,6 @@ package codeDemo.core_northwind_java.business.abstracts;
 
 import java.util.List;
 
-import org.springframework.data.jpa.repository.Query;
-
 import codeDemo.core_northwind_java.core.utilities.results.DataResult;
 import codeDemo.core_northwind_java.core.utilities.results.Result;
 import codeDemo.core_northwind_java.entities.concretes.Product;
