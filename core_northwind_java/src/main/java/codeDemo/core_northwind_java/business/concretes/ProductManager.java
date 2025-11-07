@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import codeDemo.core_northwind_java.business.abstracts.ProductService;
+import codeDemo.core_northwind_java.core.utilities.results.DataResult;
+import codeDemo.core_northwind_java.core.utilities.results.SuccessDataResult;
 import codeDemo.core_northwind_java.dataAccess.abstracts.ProductDao;
 import codeDemo.core_northwind_java.entities.concretes.Product;
 
@@ -24,9 +26,12 @@ public class ProductManager implements ProductService{
 
 
 	@Override
-	public List<Product> getAll() {
-		// TODO Auto-generated method stub
-		return  this.productDao.findAll();
+	public DataResult<List<Product>> getAll() {
+		
+		return new SuccessDataResult<List<Product>>
+		(this.productDao.findAll(),"Data has been listed");
+				
+				
 	}
 
 }
