@@ -12,6 +12,7 @@ import codeDemo.core_northwind_java.core.utilities.results.SuccessDataResult;
 import codeDemo.core_northwind_java.core.utilities.results.SuccessResult;
 import codeDemo.core_northwind_java.dataAccess.abstracts.ProductDao;
 import codeDemo.core_northwind_java.entities.concretes.Product;
+import codeDemo.core_northwind_java.entities.dtos.ProductWithCategoryDto;
 
 
 @Service
@@ -84,6 +85,13 @@ public class ProductManager implements ProductService{
 	public DataResult<List<Product>> getByNameAndCategory(String productName, int categoryId) {
 		return new SuccessDataResult<List<Product>>
 		(this.productDao.getByNameAndCategory(productName,categoryId),"Data has been listed");
+	}
+
+
+	@Override
+	public DataResult<List<ProductWithCategoryDto>> getProductWithCategorDetails() {
+		return new SuccessDataResult<List<ProductWithCategoryDto>>
+		(this.productDao.getProductWithCategorDetails(),"Data has been listed");
 	}
 
 }

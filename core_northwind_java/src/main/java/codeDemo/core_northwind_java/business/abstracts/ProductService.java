@@ -5,9 +5,11 @@ import java.util.List;
 import codeDemo.core_northwind_java.core.utilities.results.DataResult;
 import codeDemo.core_northwind_java.core.utilities.results.Result;
 import codeDemo.core_northwind_java.entities.concretes.Product;
+import codeDemo.core_northwind_java.entities.dtos.ProductWithCategoryDto;
 
 public interface ProductService {
 	DataResult<List<Product>> getAll();
+	
 	Result add(Product product);
 	
 	DataResult<Product> getByProductName(String productName);
@@ -23,4 +25,6 @@ public interface ProductService {
 	DataResult<List<Product>> getByProductNameStartsWith(String ProductName);
 	
 	DataResult<List<Product>> getByNameAndCategory(String productName, int categoryId);
+	
+	DataResult<List<ProductWithCategoryDto>> getProductWithCategorDetails();
 }
