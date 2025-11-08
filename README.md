@@ -10,3 +10,6 @@
 <img width="1648" height="801" alt="Ekran Resmi 2025-11-09 01 24 14" src="https://github.com/user-attachments/assets/811d0dfb-a3cb-447c-b307-85ec164c82d0" />
 <img width="1648" height="801" alt="Ekran Resmi 2025-11-09 01 24 42" src="https://github.com/user-attachments/assets/b0ede198-7a9f-45b3-a6fb-12dfddd32d54" />
 <img width="1648" height="1041" alt="Ekran Resmi 2025-11-09 01 25 14" src="https://github.com/user-attachments/assets/c5ab5032-c7ab-4b6d-9120-2d690ed09585" />
+<img width="1648" height="1041" alt="Ekran Resmi 2025-11-09 01 25 37" src="https://github.com/user-attachments/assets/fac781cd-dfda-495a-a2d6-ee398501853e" />
+<img width="1648" height="1041" alt="Ekran Resmi 2025-11-09 01 26 15" src="https://github.com/user-attachments/assets/c0cafd84-3464-41eb-987e-ac09db580b8b" />
+<img width="1648" height="1041" alt="Ekran Resmi 2025-11-09 01 26 45" src="https://github.com/user-attachments/assets/bb43e8c5-af0b-475d-8f76-17d61b227e5f" />
